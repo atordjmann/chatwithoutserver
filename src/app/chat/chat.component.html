@@ -1,0 +1,6 @@
+<div class="chat-container">
+  <app-contacts [contactList]="contactList" [userInContact]="userInContact" (selectedContactUsername)="selectContact($event)"></app-contacts>
+  <app-messages *ngIf="userInContact" [messages]="messagesToDisplay" [myUsername]="myUsername" (newMessage)="addMessage($event)"></app-messages>
+  <span *ngIf="contactList.length !== 0 && !userInContact" class="no-contact">Please select a contact</span>
+</div>
+

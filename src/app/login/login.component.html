@@ -1,0 +1,25 @@
+<div *ngIf="!isLogged">
+  <h1>Let's talk !</h1>
+
+<div class="login-form">
+  <mat-form-field appearance="fill">
+    <mat-label>Username</mat-label>
+    <input required #inputUsername matInput placeholder="Username">
+  </mat-form-field>
+  <span *ngIf="nameAlreadyExists" class="username-error">This username already exists</span>
+  <span *ngIf="nameEmpty" class="username-error">Username is required</span>
+
+  <button mat-raised-button (click)="login()">Log in</button>
+</div>
+
+<img src="../../assets/undraw_neighbors_ciwb.svg">
+</div>
+
+
+<div *ngIf="isLogged" class="chat">
+  <app-chat [myUsername]="myUsername" [contactList]="contactList"></app-chat>
+</div>
+
+
+  
+

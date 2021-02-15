@@ -1,0 +1,10 @@
+<div *ngFor="let message of messages" class="container-messages">
+  <p class="message" [ngClass]="{'left-message': message.receivedBy == myUsername, 'right-message': message.writeBy == myUsername}">{{message.content}}</p>
+</div>
+
+<div class="message-input">
+  <mat-form-field appearance="fill">
+    <mat-label>Write your message</mat-label>
+    <input #inputMessage matInput (keyup.enter) = "onEnter(inputMessage.value)">
+  </mat-form-field>
+</div>

@@ -1,0 +1,33 @@
+.message-input {
+    width: 90%;
+}
+
+mat-form-field{
+    padding:20px;
+    width: 70%;
+    position: absolute;
+    bottom: 1vh;
+}
+
+.container-messages{
+    padding:3vh;
+}
+
+.message {
+    padding: 13px;    
+    border-radius: 16px;
+    position: absolute;
+    width: fit-content;
+    max-width: 40%;
+}
+
+.left-message {    
+    background-color: #031031;
+    color:white; 
+}
+
+.right-message {    
+    right: 12px;
+    background-color: #ff7307;
+    color:white;    
+}

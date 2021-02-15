@@ -1,0 +1,13 @@
+<mat-list *ngIf="contactList.length !== 0">
+  <div *ngFor="let contact of contactList" class="contact-list" [ngClass]="{'selected-contact': contact.username === userInContact}">
+    <mat-list-item (click)="selectContact(contact.username)">
+      <a>
+        <h3>{{contact.username}}</h3>
+      </a>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </div>
+  
+</mat-list>
+
+<span *ngIf="contactList.length === 0" class="unavailable">No user is available...</span>

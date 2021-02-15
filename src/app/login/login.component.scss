@@ -1,0 +1,45 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: appear;
+}
+
+.username-error {
+  color:rgb(143, 25, 25);
+  font-style: italic;
+}
+
+img {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    animation-duration: 3s;
+    animation-name: appear;
+}
+
+h1 {
+    text-align: center;
+    color:#031031;
+    padding:35px;
+    animation-duration: 3s;
+    animation-name: appear;
+}
+
+.chat{
+  height:100%;
+}
+
+@keyframes appear {
+  from {
+    display: none;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

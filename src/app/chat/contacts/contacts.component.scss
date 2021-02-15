@@ -1,0 +1,20 @@
+.contact-list {
+    width:100%;
+}
+
+mat-list{
+    padding-top: 0px;
+}
+
+mat-list-item:hover{
+    cursor: pointer;
+}
+
+.selected-contact {
+    background-color: lightgrey;
+}
+
+.unavailable{
+    padding:1vh;
+    font-style: italic;
+}
